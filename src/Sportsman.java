@@ -1,0 +1,24 @@
+public abstract class Sportsman extends Person {
+    private String dietDescription;
+    private int careerStartAt;
+
+    public Sportsman(String name, String surname, int birthYear, String dietDescription, int careerStartAt) {
+        super(name, surname, birthYear);
+        this.dietDescription = dietDescription;
+        this.careerStartAt = careerStartAt;
+    }
+
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nSportsman{" +
+                "dietDescription='" + dietDescription + '\'' +
+                ", careerStartAt=" + careerStartAt +
+                '}';
+    }
+
+    public void train() {
+
+    }
+}
+
